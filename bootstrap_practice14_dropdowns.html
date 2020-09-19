@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">	
+	<title>Dropdowns</title>
+</head>
+<body>
+	<div class = "container">
+      <h2>Basic Dropdown</h2>
+         <div class = "row">
+            <div class = "dropdown">
+               <button class = "btn btn-info dropdown-toggle" type = "button" 
+                  id = "dropdownMenuButton" data-toggle = "dropdown" aria-haspopup = "true" 
+                  aria-expanded = "false">Dropdown button</button>
+               
+               <div class = "dropdown-menu" aria-labelledby = "dropdownMenuButton">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Dropdown with Split Buttons</h2>
+         <div class = "row">
+            <div class = "btn-group">
+               <button type = "button" class = "btn btn-primary">Primary</button>
+               <button type = "button" class = "btn btn-primary 
+                  dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group">
+               <button type = "button" class = "btn btn-secondary">Secondary</button>
+               <button type = "button" class = "btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group">
+               <button type =" button" class = "btn btn-success">Success</button>
+               <button type = "button" class = "btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group">
+               <button type = "button" class = "btn btn-info">Info</button>
+               <button type = "button" class = "btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group">
+               <button type = "button" class = "btn btn-warning">Warning</button>
+               <button type = "button" class = "btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group">
+               <button type = "button" class = "btn btn-danger">Danger</button>
+               <button type = "button" class = "btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle = "dropdown">
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Dropdown Sizes and Split Buttons</h2>
+         <div class = "btn-group">
+            <button class = "btn btn-info btn-lg dropdown-toggle" type = "button" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+               
+               Large button
+            </button>
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item" href =" #">Contact Us</a>
+            </div>
+         </div>
+         
+         <div class = "btn-group">
+            <button class = "btn btn-info btn-lg" type = "button">
+               Large split button
+            </button>
+            
+            <button type = "button" class = "btn btn-lg btn-info dropdown-toggle dropdown-toggle-split" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+               <span class = "sr-only">Toggle Dropdown</span>
+            </button>
+            
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item" href = "#">Contact Us</a>
+            </div>
+         </div>
+         <br>
+         <br>
+         
+         <div class = "btn-group">
+            <button class = "btn btn-info btn-sm dropdown-toggle" type = "button" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+               
+               Small button
+            </button>
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item" href = "#">Contact Us</a>
+            </div>
+         </div>
+         
+         <div class = "btn-group">
+            <button class = "btn btn-info btn-sm" type = "button">
+               Small split button
+            </button>
+            <button type = "button" class = "btn btn-sm btn-info dropdown-toggle dropdown-toggle-split" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+               <span class = "sr-only">Toggle Dropdown</span>
+            </button>
+            
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item" href = "#">Contact Us</a>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <br>
+         <br>
+         
+         <h2>Dropdown Directions</h2>
+         <br>
+         <br>
+         
+         <div class = "row">
+            <div class = "btn-group dropright">
+               <button type = "button" class = "btn btn-info dropdown-toggle" 
+                  data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+                  Dropright
+               </button>
+               
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group dropup">
+               <button type = "button" class = "btn btn-info dropdown-toggle" 
+                  data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+                  Dropup
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+             
+            
+            <div class = "btn-group dropleft">
+               <button type = "button" class = "btn btn-info dropdown-toggle" 
+                  data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+                  
+                  Dropleft
+               </button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Home</a>
+                  <a class = "dropdown-item" href = "#">About Us</a>
+                  <a class = "dropdown-item" href = "#">Contact Us</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Headers</h2>
+         <div class = "btn-group dropright">
+            <button type = "button" class = "btn btn-info dropdown-toggle" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+            
+               Headers Example
+            </button>
+            <div class = "dropdown-menu p-4 text-muted">
+               <h6 class = "dropdown-header">This is Header</h6>
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item" href = "#">Contact Us</a>  
+            </div>
+         </div>
+         <br>
+         <br>
+         
+         <h2>Dividers</h2>
+         <div class = "btn-group dropright">
+            <button type = "button" class = "btn btn-info dropdown-toggle" 
+               data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+               
+               Dividers Example
+            </button>
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <div class = "dropdown-divider"></div>
+               <a class = "dropdown-item" href = "#">Contact Us</a>  
+            </div>
+         </div>
+         <br>
+         <br>
+         
+         <h2>Text</h2>
+         <div class = "dropdown">
+            <button type = "button" class = "btn btn-info dropdown-toggle" data-toggle = "dropdown">
+               Dropdown button
+            </button>
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item" href = "#">About Us</a>
+               <a class = "dropdown-item-text" href = "#">This is Text Link</a>
+               <span class = "dropdown-item-text" href = "#">Thi is just Text</span>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Active and Disabled item</h2>
+         <div class = "dropdown">
+            <button type = "button" class = "btn btn-info dropdown-toggle" 
+               data-toggle = "dropdown">
+            
+               Dropdown button
+            </button>
+            
+            <div class = "dropdown-menu">
+               <a class = "dropdown-item" href = "#">Home</a>
+               <a class = "dropdown-item active" href = "#">About Us - Active Item</a>
+               <a class = "dropdown-item disabled" href = "#">Contct Us - Disabled Item</a>
+            </div>
+            
+         </div>
+      </div>
+	<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+         integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "bootstrap-4.0.0-dist/js/bootstrap.min.js">
+      </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+	<title>Popover</title>
+</head>
+<body>
+	<div class = "container">
+         <h2>Basic Popover</h2>
+         <button type = "button" class = "btn btn-info" 
+            data-toggle = "popover" title = "Popover title" 
+            data-content = "Popover content goes here...">Basic Popover</button>
+      </div>
+      <div class = "container">
+         <br>
+         <br>
+         
+         <h2>Popover Directions</h2>
+         <br>
+         <button type = "button" class = "btn btn-lg btn-info" 
+            data-container = "body" data-toggle = "popover" data-placement = "top" 
+            data-content = "Opens at Top side of the button.">Top</button>
+           
+         <button type = "button" class = "btn btn-lg btn-info" 
+            data-container = "body" data-toggle = "popover" data-placement = "right" 
+            data-content = "Opens at Right side of the button.">Right</button>
+           
+         <button type = "button" class = "btn btn-lg btn-info" 
+            data-container = "body" data-toggle = "popover" data-placement = "bottom" 
+            data-content = "Opens at Bottom side of the button.">Bottom</button>
+           
+         <button type = "button" class = "btn btn-lg btn-info" 
+            data-container = "body" data-toggle = "popover" data-placement = "left" 
+            data-content = "Opens at Left Side of the button.">Left</button>
+      </div>
+      
+       <div class = "container">
+         <h2>Closing Popover</h2>
+         <a tabindex = "0" class = "btn btn-info" role = "button" 
+            data-toggle = "popover" data-trigger = "focus" title = "Popover" 
+            data-content = "Click outside to dismiss the popover">Dismissible Popover</a>
+         <br>
+         <br>
+         
+         <h2>Disabled Element</h2>
+         <span class = "d-inline-block" data-toggle = "popover" data-content = "This button is disabled">
+            <button class = "btn btn-info" style = "pointer-events: none;" 
+               type = "button" disabled>Button</button>
+         </span>
+      </div>
+      
+      <script>
+         $(document).ready(function(){
+            $('[data-toggle = "popover"]').popover();  
+            $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script>
+<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+         integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "bootstrap-4.0.0-dist/js/bootstrap.min.js">
+      </script>
+</body>
+</html>

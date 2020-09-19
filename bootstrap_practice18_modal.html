@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+	<title>Modal</title>
+</head>
+<body>
+	<div class =" container">
+         <h2>Basic Modal</h2>
+         <br>
+         
+         <!-- Button trigger modal -->
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" data-target = "#exampleModal">Launch Modal</button>
+         
+         <!-- Modal -->
+         <div class = "modal fade" id = "exampleModal" tabindex = "-1" 
+            role = "dialog" aria-labelledby =" exampleModalLabel" aria-hidden = "true">
+            <div class = "modal-dialog" role = "document">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <h5 class = "modal-title" id = "exampleModalLabel">Modal Header</h5>
+                     <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+                        <span aria-hidden = "true">×</span>
+                     </button>
+                  </div>
+                  
+                  <div class = "modal-body">
+                     Modal Body
+                  </div>
+                  
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-danger" data-dismiss = "modal">Close</button>
+                     <button type = "button" class = "btn btn-success">Save</button>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Vertically centered, Using the Grid, Tooltips and Popovers</h2>
+         <br>
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = "#exampleModalGrid">Open Modal</button>
+         
+         <!-- Modal -->
+         <div class = "modal fade" id = "exampleModalGrid" tabindex = "-1" 
+            role = "dialog" aria-labelledby = "exampleModalLabel" aria-hidden = "true">
+            
+            <div class = "modal-dialog modal-dialog-centered" role = "document">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <h5 class = "modal-title" id = "exampleModalLabel">Modal Header</h5>
+                     <button type = "button" class = "close" data-dismiss = "modal" 
+                        aria-label = "Close">
+                        
+                        <span aria-hidden = "true">×</span>
+                     </button>
+                  </div>
+                  
+                  <div class = "modal-body">
+                     <h5>Grid system in a modal</h5>
+                     <div class = "row">
+                        <div class = "col-md-4 bg-primary">class = 'col-md-4'</div>
+                        <div class = "col-md-4 bg-success">class = 'col-md-4'</div>
+                        <div class = "col-md-4 bg-primary">class = 'col-md-4'</div>
+                     </div>
+                     <br>
+                     
+                     <div class = "row">
+                        <div class = "col-8 col-sm-6 bg-primary">class = 'col-8 col-sm-6'
+                        </div>
+                        <div class = "col-4 col-sm-6 bg-success">class = 'col-4 col-sm-6'
+                        </div>
+                     </div>
+                     <hr>
+                     
+                     <h5>Popover in a modal</h5>
+                     <a href = "#" data-toggle = "popover" 
+                        title = "Popover in a modal" 
+                        data-content = "Popover content inside modal">Click Me For Popover</a>
+                     <hr>
+                     
+                     <h5>Tooltip in a modal</h5>
+                     <a href = "#" data-toggle = "tooltip" title = "Hover over">Just Hover!</a>
+                  </div>
+                  
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-danger" data-dismiss = "modal">Close</button>
+                     <button type = "button" class = "btn btn-success">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Modal Size</h2>
+         <br>
+         
+         <!-- Large modal -->
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = ".bd-example-modal-lg">Large modal</button>
+         
+         <div class = "modal fade bd-example-modal-lg" tabindex = "-1" 
+            role ="d ialog" aria-labelledby =" myLargeModalLabel" 
+            aria-hidden = "true">
+            
+            <div class = "modal-dialog modal-lg">
+               <div class = "modal-content">
+                  
+                  <div class = "modal-header">
+                     <h5 class = "modal-title" id = "exampleModalLabel">Modal Header</h5>
+                     <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+                     <span aria-hidden = "true">×</span>
+                     </button>
+                  </div>
+                  
+                  <div class = "modal-body">
+                     Large Size Modal
+                  </div>
+                  
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-danger" data-dismiss = "modal">Close</button>
+                     <button type = "button" class = "btn btn-success">Save</button>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <!-- Small modal -->
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = ".bd-example-modal-sm">Small modal</button>
+         
+         <div class = "modal fade bd-example-modal-sm" tabindex = "-1" 
+            role = "dialog" aria-labelledby = "mySmallModalLabel" aria-hidden = "true">
+            <div class = "modal-dialog modal-sm">
+               <div class = "modal-content">
+                  
+                  <div class = "modal-header">
+                     <h5 class = "modal-title" id = "exampleModalLabel">Modal Header</h5>
+                     <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+                     <span aria-hidden = "true">×</span>
+                     </button>
+                  </div>
+                  
+                  <div class = "modal-body">
+                     Small Size Modal
+                  </div>
+                  
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-danger" 
+                        data-dismiss = "modal">Close</button>
+                     <button type = "button" class = "btn btn-success">Save</button>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Varying Modal Content</h2>
+         <br>
+         
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = "#exampleVaryingModal1" data-whatever = "John Doe">
+            Recipient: John Doe</button>
+         
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = "#exampleVaryingModal1" data-whatever = "Will Smith">
+            Recipient: Will Smith</button>
+         
+         <button type = "button" class = "btn btn-info" data-toggle = "modal" 
+            data-target = "#exampleVaryingModal1" data-whatever = "Dwayne Johnson">
+            Recipient: Dwayne Johnson</button>
+         
+         <div class = "modal fade" id = "exampleVaryingModal1" tabindex = "-1" 
+            role = "dialog" aria-labelledby = "exampleModalLabel" aria-hidden = "true">
+            
+            <div class = "modal-dialog" role = "document">
+               <div class = "modal-content">
+                  
+                  <div class = "modal-header">
+                     <h5 class = "modal-title" id = "exampleModalLabel">New message</h5>
+                     <button type = "button" class = "close" data-dismiss = "modal" 
+                        aria-label = "Close">
+                        
+                        <span aria-hidden = "true">×</span>
+                     </button>
+                  </div>
+                  
+                  <div class = "modal-body">
+                     <form>
+                        <div class = "form-group">
+                           <label for = "recipient-name" class = "col-form-label">
+                              Recipient:</label>
+                           <input type = "text" class = "form-control" id = "recipient-name">
+                        </div>
+                        
+                        <div class = "form-group">
+                           <label for = "message-text" class = "col-form-label">Message:</label>
+                           <textarea class = "form-control" id = "message-text"></textarea>
+                        </div>
+                     </form>
+                  </div>
+                  
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-danger" 
+                        data-dismiss = "modal">Close</button>
+                     
+                     <button type = "button" class = "btn btn-success">Send</button>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      
+      <script>
+        $(document).ready(function(){
+            $('#exampleVaryingModal1').on('show.bs.modal', function (event) {
+               var button = $(event.relatedTarget) // Button that triggered the modal
+               var recipient = button.data('whatever') // Extract info from data-* attributes
+               // We are jquery here to update the modal's content
+               var modal = $(this)
+               modal.find('.modal-title').text('New message to ' + recipient)
+               modal.find('.modal-body input').val(recipient)
+            })    
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+             $('[data-toggle="popover"]').popover();  
+              $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script>
+	<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+         integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "bootstrap-4.0.0-dist/js/bootstrap.min.js">
+      </script>
+</body>
+</html>

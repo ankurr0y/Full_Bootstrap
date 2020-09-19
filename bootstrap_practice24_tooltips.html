@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      	<title>Tooltips</title>
+</head>
+<body>
+	<div class = "container">
+         <h2>Tooltip on Link</h2>
+         <p>
+            Here 
+            <a href = "#" data-toggle = "tooltip" title = "Tooltip on link">
+               Hello
+            </a>
+         
+            <h2>Tooltip on Button</h2>
+            Here
+            <button type = "button" class = "btn btn-info" data-toggle = "tooltip" 
+               data-placement = "top" title = "Tooltip on button">
+               Hello
+            </button>
+         </p>
+      </div>
+      <div class = "container">
+      <br>
+      
+      <h2>Positioning Tooltips</h2>
+      <br>
+      <button type = "button" class = "btn btn-info" data-toggle = "tooltip" 
+         data-placement = "top" title = "Tooltip on top">Tooltip on top</button>
+      
+      <button type = "button" class = "btn btn-info" data-toggle = "tooltip" 
+         data-placement = "right" title = "Tooltip on right">Tooltip on right</button>
+      
+      <button type = "button" class = "btn btn-info" data-toggle = "tooltip" 
+         data-placement = "bottom" title = "Tooltip on bottom">Tooltip on bottom</button>
+      
+      <button type = "button" class = "btn btn-info" data-toggle = "tooltip" 
+         data-placement = "left" title = "Tooltip on left">Tooltip on left</button>
+      
+      
+      <script>
+         $(document).ready(function(){
+            $('[data-toggle = "tooltip"]').tooltip();
+         });
+      </script>
+</body>
+</html>

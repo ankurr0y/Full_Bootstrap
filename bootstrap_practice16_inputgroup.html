@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+	<title>Input group</title>
+</head>
+<body>
+	<div class = "container">
+         <h2>Input Group</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text" id = "basic-addon1">Username@</span>
+            </div>
+            <input type = "text" class = "form-control" placeholder = "Username" 
+               aria-label = "Username" aria-describedby = "basic-addon1">
+         </div>
+         
+         <div class = "input-group mb-3">
+            <input type = "text" class = "form-control" 
+               placeholder = "Recipient's username" aria-label = "Recipient's username" 
+               aria-describedby = "basic-addon2">
+            <div class = "input-group-append">
+               <span class = "input-group-text" id = "basic-addon2">@gmail.com</span>
+            </div>
+         </div>
+         
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text">Price in $</span>
+            </div>
+            <input type = "text" class = "form-control" 
+               aria-label = "Amount (to the nearest dollar)">
+            
+            <div class = "input-group-append">
+               <span class = "input-group-text">.00</span>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Input Group Sizing</h2>
+         <div class = "input-group input-group-lg">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text" id = "inputGroup-sizing-lg">@</span>
+            </div>
+            <input type = "text" class = "form-control" aria-label = "Sizing example input" 
+               aria-describedby = "inputGroup-sizing-lg" placeholder = "Large Input Group">
+         </div>
+         <br>
+         
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text" id = "inputGroup-sizing-default">@</span>
+            </div>
+            <input type = "text" class = "form-control" aria-label = "Sizing example input" 
+               aria-describedby = "inputGroup-sizing-default" placeholder = "Default Input Group">
+         </div>
+         
+         <div class = "input-group input-group-sm mb-3">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text" id = "inputGroup-sizing-sm">@</span>
+            </div>
+            <input type = "text" class = "form-control" aria-label = "Sizing example input" 
+               aria-describedby = "inputGroup-sizing-sm" placeholder = "Small Input Group">
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Input Group with Checkbox and Radio Button</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <div class = "input-group-text">
+                  <input type = "checkbox" aria-label = "Checkbox for following text input">
+               </div>
+            </div>
+            <input type = "text" class = "form-control" 
+               aria-label = "Text input with checkbox" placeholder = "Checkbox">
+         </div>
+         
+         <div class = "input-group">
+            <div class = "input-group-prepend">
+               <div class = "input-group-text">
+                  <input type = "radio" aria-label = "Radio button for following text input">
+               </div>
+            </div>
+            <input type = "text" class = "form-control" 
+               aria-label = "Text input with radio button" placeholder = "Radio button">
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Multiple Inputs</h2>
+         <div class = "input-group">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text">User Name and Password</span>
+            </div>
+            <input type = "email" aria-label = "User Name" class = "form-control">
+            <input type = "password" aria-label = "Password" class = "form-control">
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Input Group Button</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <button class = "btn btn-outline-info" type = "button" 
+                  id = "button-addon1">Button</button>
+            </div>
+            <input type = "text" class = "form-control" 
+               placeholder = "Button in Input Group" 
+               aria-label = "Example text with button addon" aria-describedby = "button-addon1">
+         </div>
+         
+         <h2>Input Group with Dropdown Button</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <button class = "btn btn-outline-info dropdown-toggle" 
+                  type = "button" data-toggle = "dropdown" 
+                  aria-haspopup = "true" aria-expanded = "false">Dropdown</button>
+               <div class = "dropdown-menu">
+                  <a class = "dropdown-item" href = "#">Option #1</a>
+                  <a class = "dropdown-item" href = "#">Option #2</a>
+                  <a class = "dropdown-item" href = "#">Option #3</a>
+                  <div role = "separator" class = "dropdown-divider"></div>
+                  <a class = "dropdown-item" href = "#">Option #4</a>
+               </div>
+            </div>
+            <input type = "text" class = "form-control" 
+               aria-label = "Text input with dropdown button" 
+               placeholder = "Dropdown in Input Group">
+         </div>
+      </div>
+      <div class = "container">
+         <h2>Custom Select</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <label class = "input-group-text" for = "inputGroupSelect01">Select Options</label>
+            </div>
+            <select class = "custom-select" id = "inputGroupSelect01">
+               <option selected>Select</option>
+               <option value = "1">Option #1</option>
+               <option value = "2">Option #2</option>
+               <option value = "3">Option #3</option>
+            </select>
+         </div>
+         
+         <h2>Custom File Input</h2>
+         <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+               <span class = "input-group-text" id = "inputGroupFileAddon01">Attach Files</span>
+            </div>
+            
+            <div class = "custom-file">
+               <input type = "file" class = "custom-file-input" 
+                  id = "inputGroupFile01" aria-describedby = "inputGroupFileAddon01">
+               <label class = "custom-file-label" for = "inputGroupFile01">Choose Files</label>
+            </div>
+            
+         </div>
+      </div>
+	<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+         integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "bootstrap-4.0.0-dist/js/bootstrap.min.js">
+      </script>
+</body>
+</html>
